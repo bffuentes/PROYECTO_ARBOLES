@@ -1,4 +1,3 @@
-# interfaz.py
 import tkinter as tk
 from tkinter import messagebox
 from logica import SistemaHabilidades
@@ -116,4 +115,5 @@ class AplicacionHabilidades:
         
         # Iniciar el dibujo recursivo desde las dos raíces (Bosque de Árboles)
         self.dibujar_rama(self.sistema.raices["Combate"], 270, 70, 150)
+
         self.dibujar_rama(self.sistema.raices["Magia"], 780, 70, 150)
