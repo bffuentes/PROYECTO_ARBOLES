@@ -8,7 +8,7 @@ https://www.geeksforgeeks.org/python/binary-tree-in-python/
 Y la lógica de los grafos se toma de la guía de la unidad IV.
 
 El proyecto está dividido en 4 partes: 
-  * En modelos.py están las variables generales que utilizarán en el proyecto.
+  * En modelos.py están las variables generales que se utilizarán en el proyecto.
   * En logica.py se maneja todo el funcionamiento del programa en general.
   * En interfaz.py está todo el aspecto visual del proyecto y su conexión con la parte lógica.
   * Finalmente, en el main.py se crea la ventana donde se genera el programa, se crea el cuadro donde va la interfaz.
