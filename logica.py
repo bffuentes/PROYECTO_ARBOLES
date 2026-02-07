@@ -1,4 +1,3 @@
-# logica.py
 from modelos import NodoHabilidad
 
 class SistemaHabilidades:
@@ -62,4 +61,5 @@ class SistemaHabilidades:
     def reiniciar_todo(self):
         self.puntos = self.puntos_iniciales
         for h in self.todas_las_habilidades.values():
+
             h.desbloqueado = False
