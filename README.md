@@ -13,3 +13,8 @@ El proyecto está dividido en 4 partes:
   * En interfaz.py está todo el aspecto visual del proyecto y su conexión con la parte lógica.
   * Finalmente, en el main.py se crea la ventana donde se genera el programa, se crea el cuadro donde va la interfaz.
 Y se inicia el bucle de eventos.
+
+Cómo ejecutar el proyecto🤓:
+1. Instala python👺.
+2. Clona el repositorio.
+3. Ejecuta "python main.py".
