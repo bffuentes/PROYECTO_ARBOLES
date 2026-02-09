@@ -63,7 +63,7 @@ class AplicacionHabilidades:
             "Betania Campos. 26975684\n"
             "Bramdon Fuentes. 30079515\n"
             "Claudia Suárez. 30037018\n"
-            "Julio Palacios. "
+            "Julio Palacios. 28049732"
         )
 
         # Etiqueta con los nombres alineados a la derecha
@@ -140,6 +140,7 @@ class AplicacionHabilidades:
         self.dibujar_rama(self.sistema.raices["Combate"], 270, 70, 150)
 
         self.dibujar_rama(self.sistema.raices["Magia"], 780, 70, 150)
+
 
 
 
