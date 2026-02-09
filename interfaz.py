@@ -58,12 +58,12 @@ class AplicacionHabilidades:
 
         # Lista de nombres
         integrantes = (
+            "Alexander Cova. 26361443\n"
             "Antoni Cortez. 31412808\n"
-            "Alexander Cova\n"
             "Betania Campos. 26975684\n"
             "Bramdon Fuentes. 30079515\n"
-            "Claudia Suárez\n"
-            "Julio Cabello"
+            "Claudia Suárez. 30037018\n"
+            "Julio Cabello. "
         )
 
         # Etiqueta con los nombres alineados a la derecha
@@ -140,4 +140,5 @@ class AplicacionHabilidades:
         self.dibujar_rama(self.sistema.raices["Combate"], 270, 70, 150)
 
         self.dibujar_rama(self.sistema.raices["Magia"], 780, 70, 150)
+
 
