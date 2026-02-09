@@ -42,10 +42,33 @@ class AplicacionHabilidades:
                                     "• [Congelar] requiere [Escudo]")
         self.txt_guia.config(state="disabled") # solo para lectura
         self.txt_guia.pack(pady=5)
-
+        self.crear_cuadro_integrantes()
         # Dibujar los arboles iniciales
         self.actualizar_interfaz()
 
+    def crear_cuadro_integrantes(self):
+        """Crea un cuadro flotante en la esquina inferior derecha para los autores"""
+        # Marco contenedor posicionado en la esquina (South-East)
+        self.marco_equipo = tk.Frame(self.ventana, bg="#0b0d17", padx=10, pady=10)
+        self.marco_equipo.place(relx=1.0, rely=1.0, anchor="se")
+
+        # Título del equipo
+        tk.Label(self.marco_equipo, text="Integrantes:", bg="#0b0d17", fg="cyan", 
+                 font=("Arial", 9, "bold")).pack(anchor="e")
+
+        # Lista de nombres
+        integrantes = (
+            "Antoni Cortez. 31412808\n"
+            "Alexander Cova\n"
+            "Betania Campos. 26975684\n"
+            "Bramdon Fuentes. 30079515\n"
+            "Claudia Suárez\n"
+            "Julio Cabello"
+        )
+
+        # Etiqueta con los nombres alineados a la derecha
+        tk.Label(self.marco_equipo, text=integrantes, bg="#0b0d17", fg="#08eb5f", 
+                 font=("Consolas", 8), justify="right").pack(anchor="e")    
     def dibujar_rama(self, nodo, x, y, sep_h):
         """Función recursiva para renderizar el Árbol Binario"""
         if not nodo: return
@@ -117,3 +140,4 @@ class AplicacionHabilidades:
         self.dibujar_rama(self.sistema.raices["Combate"], 270, 70, 150)
 
         self.dibujar_rama(self.sistema.raices["Magia"], 780, 70, 150)
+
